@@ -6,28 +6,33 @@ import AssignmentRoundedIcon from "@mui/icons-material/AssignmentRounded";
 
 export const SidebarData = [
   {
+    id: 1,
     title: "home",
     icon: <HomeIcon />,
-    link: "/home",
+    url: "#home",
   },
   {
+    id: 2,
     title: "About Me",
     icon: <AccountCircleIcon />,
-    link: "/about-me",
+    url: "#about",
   },
   {
+    id: 3,
     title: "Resume",
     icon: <AssignmentRoundedIcon />,
-    link: "/resume",
+    url: "#resume",
   },
   {
+    id: 4,
     title: "My Work",
     icon: <ViewInArIcon />,
-    link: "/my-work",
+    url: "#work",
   },
   {
+    id: 5,
     title: "Contacts",
     icon: <CallIcon />,
-    link: "/contacts",
+    url: "#contacts",
   },
 ];

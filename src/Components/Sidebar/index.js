@@ -5,19 +5,15 @@ import { SidebarData } from "../SidebarData/index";
 function Sidebar() {
   return (
     <div className="sidebar">
-      <ul>
-        {SidebarData.map((val, key) => {
+      <div className="sidebar-content">
+        {SidebarData.map((data) => {
           return (
-            <li
-              onClick={() => {
-                window.location.pathname = val.link;
-              }}
-            >
-              <div>{val.icon}</div> <div>{val.title}</div>
-            </li>
+            <a href={data.url} key={data.id} className="data">
+              {data.title}
+            </a>
           );
         })}
-      </ul>
+      </div>
     </div>
   );
 }
